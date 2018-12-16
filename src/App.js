@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import bg from './bg.jpg';
 import './App.css';
-
 
 import Card from './Card/Card';
 import ToggleButton from './ToggleButton/ToggleButton';
