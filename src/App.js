@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   state = {
-    cards:[{key:1,message: 'This is the first job.', secondsLeft: 245},
+    cards:[{key:1,message: 'This is the first job.', secondsLeft: 246},
           {key:2,message: 'This is the second job.', secondsLeft: 103},
           {key:3,message: 'This is the third job.', secondsLeft: 235},
           {key:4,message: 'This is the fourth job.', secondsLeft: 38},
