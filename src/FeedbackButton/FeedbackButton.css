@@ -1,0 +1,95 @@
+.FeedbackButton {
+    position: relative;
+}
+
+.FeedbackButton .tooltip {
+    background: #fafafa;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -220px;
+    opacity: 0;
+    transition: 300ms;
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px #dadada;
+    border: solid 1px lightgray;
+    font-size: 13px;
+    color: #555;
+    z-index:-1;
+}
+
+.FeedbackButton .tooltip button{
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.FeedbackButton .tooltip button.submit{
+  padding: 8px 15px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: #2196F3;
+  color: white;
+}
+
+.FeedbackButton .tooltip select:focus{
+  outline: none;
+}
+
+.FeedbackButton .tooltip button.submit[disabled]{
+  background: white;
+  color: lightgray;
+}
+
+.FeedbackButton .tooltip.show{
+  opacity: 1;
+  z-index:1000;
+}
+
+.FeedbackButton .formPage{
+  display: none;
+}
+
+.FeedbackButton .formPage.show{
+  display: block;
+}
+
+.FeedbackButton .permissionPage.hide{
+  display:none;
+}
+
+.FeedbackButton .tooltip .disable-link{
+  color: #505050;
+  font-size: 12px;
+  cursor:pointer;
+  text-align: center;
+}
+
+.FeedbackButton .tooltip .disable-link:hover{
+  text-decoration: underline;
+}
+
+.FeedbackButton .tooltip form input,.tooltip form select,.tooltip form label{
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.FeedbackButton .tooltip form select{
+    height: 25px;
+}
+
+.FeedbackButton .tooltip form input{
+    padding: 5px 5px;
+}
+
+.FeedbackButton .tooltip p{
+  margin-top: 0px;
+}
