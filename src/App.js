@@ -28,7 +28,6 @@ class App extends Component {
   }
 
   toggleTooltipPermission = () => {
-    //alert('test');
     let newState = {
       ...this.state,
       tooltipPermission: !this.state.tooltipPermission

@@ -25,9 +25,10 @@ class Card extends Component {
         <label>Why did you skip this job?</label>
         <select name="reason" onChange={(e) => this.changeHandler(e)}>
           <option disabled selected>Select One</option>
-          <option>Becuase it sucked.</option>
-          <option>Becuase it sucked ass.</option>
-          <option>It was gay.</option>
+          <option>Not enough budget.</option>
+          <option>Job details unclear.</option>
+          <option>No previous experience in task.</option>
+          <option>Too much additional research needed to quote.</option>
         </select>
       </div>
     </form>
