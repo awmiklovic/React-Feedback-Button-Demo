@@ -1,6 +1,7 @@
 body{
   overflow: hidden;
   background-image:url('./bg.jpg');
+  background-size: cover;
 }
 .App {
   text-align: center;
