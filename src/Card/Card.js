@@ -39,12 +39,10 @@ class Card extends Component {
       ...this.state,
       [name]: value
     }
-    console.log(memState);
     return(memState.reason.length > 0)
   }
 
   formSubmit = () => {
-    //alert('Sent form data. Reason:'+this.state.reason+'  Additional Info:'+this.state.additional);
     let newState = {
       ...this.state,
       reason: '',
@@ -54,7 +52,6 @@ class Card extends Component {
   }
 
   changeHandler = (e) => {
-    //console.log(e.target.name);
     let newState = {
       ...this.state,
       [e.target.name]: e.target.value,
@@ -72,8 +69,6 @@ class Card extends Component {
   }
 
   render(){
-    // y = mx + b
-    // m = delta y / delta x
     const deltaTime = -300;
 
     const startR = 32;
@@ -89,7 +84,6 @@ class Card extends Component {
     let bVal = ((endB - startB) / deltaTime) * this.state.seconds + endB;
 
     let colorVal = "rgb("+rVal+','+gVal+','+bVal+')';
-    console.log(rVal);
     let minutes = Math.floor(this.state.seconds/60);
     let secs = this.state.seconds % 60;
     if (secs < 10) secs = '0'+secs;
